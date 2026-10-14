@@ -1,0 +1,18 @@
+WIFITE 0.8 validation
+PASS: ESP32-S3 firmware build; image checksum and validation hash.
+PASS: FAP build; all 45 imports resolved; actual ELF metadata contains icon and version 8.
+PASS: native protocol fixtures, Pixie families 1-5, rejection/progression and 100000 parser cases.
+PASS: actual exchange worker with independent peer crypto: same/new EAP-ID retries, M1-M7 verification, fragment ACK isolation and changed-session rejection.
+PASS: actual Auto worker: default PIN first, timeout/capture-failure fallback, radio reacquisition and success/lock/cancel/error stops.
+PASS: fresh-status confirmation, stale/duplicate filtering, temporary/persistent locks and cancellation.
+PASS: scan worker client updates, distinct-client counting and WPS advertisement retention.
+PASS: actual online worker: three inconclusive attempts stop without skipping PINs; lock/cancel stop; checkpoint preserved.
+PASS: fault-injected SDK initialization/cleanup and repeated-session mock tests.
+PASS: generated SDK scan/association functions: selected-router filtering, configuration error handling and ordinary enrollee isolation.
+Host tests use ASan/UBSan with leak detection disabled for container compatibility.
+
+NOT RUN: physical ESP32-S3 association or WPS exchange, actual router PIN/PSK
+recovery, physical screen/radio restoration checks, broad router compatibility.
+User reported v0.5 known-PIN success. v0.8 remains hardware-unverified.
+Physical AP behavior, including changed M1 or association timeouts, still requires device validation.
+No claim of complete Wifite parity.
