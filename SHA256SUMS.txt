@@ -1,0 +1,2 @@
+80499b4c1cf42304faf832bca3122abeeb9159a2b7618e2d118ecd563dd412b6  T-Embed-WirelessPi-WIFITE-v0.8-flashable.zip
+1ddec9bffe8026105ed59c9053b1e56d8881f1cc16b8a46f295da57330c4a1d2  T-Embed-WirelessPi-WIFITE-v0.8-source.zip
